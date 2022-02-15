@@ -788,25 +788,25 @@
 }
 
 .social-icon-pinterest {
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg"); 
+  background-image: url("../svg/001-pinterest.svg"); 
   background-repeat: no-repeat;
   background-size: 20px;
 }
 
 .social-icon-facebook {
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg"); 
+  background-image: url("../svg/002-facebook-logo.svg"); 
   background-repeat: no-repeat;
   background-size: 20px;
 }
 
 .social-icon-instagram {
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg"); 
+  background-image: url("../svg/005-instagram.svg"); 
   background-repeat: no-repeat;
   background-size: 20px;
 }
 
 .social-icon-tumblr {
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg"); 
+  background-image: url("../svg/003-tumblr.svg"); 
   background-repeat: no-repeat;
   background-size: 20px;
 }
@@ -824,7 +824,6 @@
   color: #999999;
 }
 
-
 @media (min-width: 641px) and (max-width: 1200px) {
   
   .popup-close {
@@ -836,14 +835,18 @@
   
   .header {
     background-image: url(../images/banner-bg-tablet.jpg);
+    min-height: 395px;
   }
 
   .header-title {
     font-size: 2.5em;
+    margin-top: 80px;
   }
 
   .header-logo {
     padding-left: 34px;
+    padding-top: 50px;
+    width: 160px;
   }
 
   .menu-hidden {
@@ -852,7 +855,7 @@
     height: 20px;
     display: block;
     margin-right: 35px;
-    margin-top: 45px;
+    margin-top: 55px;
   }
 
   .menu-hidden-label, .menu-hidden::before, .menu-hidden::after {
@@ -882,9 +885,14 @@
     display: none;
   }
 
+  .trend-title {
+    margin-top: 45px;
+  }
+
   .trend-section {
     flex-wrap: wrap;
     gap: 2px;
+    margin-top: 20px;
   }
 
   .trend-container {
@@ -974,7 +982,7 @@
   
   .header {
     background-image: url(../images/banner-mobile.jpg);
-    min-height: 640px;
+    min-height: 650px;
   }
 
   .header-container {
@@ -983,7 +991,8 @@
   }
 
   .header-logo {
-    padding-top: 190px;
+    padding-top: 175px;
+    width: 270px;
   }
 
   .menu {
@@ -992,7 +1001,7 @@
 
   .header-title {
     font-size: 1.6em;
-    margin-top: 45px;
+    margin-top: 30px;
     max-width: 80vw;
   }
 
