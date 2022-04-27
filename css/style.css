@@ -373,11 +373,6 @@
   margin-right: auto;
 }
 
-.posts {
-  display: flex;
-  flex-direction: column;
-}
-
 .post-container {
   display: flex;
   justify-content: space-between;
@@ -386,8 +381,8 @@
 }
 
 .post-image {
-  width: 380px;
-  max-height: 294px;
+  width: 100%;
+  max-width: 380px;
   margin-right: 31px;
 }
 
@@ -448,8 +443,6 @@
 }
 
 .aside-container {
-  display: flex;
-  flex-direction: column;
   width: 272px;
 }
 
@@ -554,11 +547,12 @@
   background-repeat: no-repeat;
 }
 
-.search-hint, .email-hint, .search-button-hint, .social-unit-hint {
+.hidden-hint {
   position: absolute;
   width: 1px;
   height: 1px;
   clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
 }
 
 .subscription-section {
@@ -682,6 +676,10 @@
   display: flex;
   flex-direction: column;
   width: 25%;
+}
+
+.product-img {
+  max-width: 100%;
 }
 
 .product-content {
@@ -911,7 +909,7 @@
     width: 90%;
     padding-bottom: 0.6em;
   }
-  
+
   .post-content {
     width: 100%;
     padding-right: 5px;
@@ -1060,7 +1058,6 @@
   }
 
   .post-image {
-    width: 100%;
     max-width: 480px;
   }
   
@@ -1084,9 +1081,8 @@
   }
   
   .aside-container {
-    min-width: 272px;
-    max-width: 450px;
-    width: calc(100vw - 30px);
+    width: 100%;
+    padding: 0 15px;
   }
 
   .note {
